@@ -1,0 +1,1589 @@
+body {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #fff;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+p {
+    margin: 0;
+}
+
+
+
+                            /* __________ C O N T A I N E R __________*/
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+                            /* __________ H E A D E R __________*/
+
+
+.header {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.header.fixed {
+    height: auto;
+
+    position: fixed;
+
+    background-color: transparent;
+}
+
+
+.header.fixed .header__inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 0;
+    background-color: #f3f3f3;
+}
+
+
+.header__inner {
+    display: flex;
+
+    align-items: center;
+
+    padding: 35px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 170px;
+}
+
+
+.logo__text {
+    margin-left: 5px;
+}
+
+
+.logo__title {
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    color: #000000;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+
+.logo__subtitle {
+    font-family: 'Red Rose', cursive;
+    font-weight: 300;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+                            /* __________ N A V __________*/
+
+
+.nav {
+    display: flex;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 800;
+    color: #000000;
+    font-size: 20px;
+    transition: color .2s linear;
+    border-bottom: 1px solid #afafaf;
+    transition: border .2s linear;
+    transition: font-size .2s linear;
+}
+
+
+.nav__link:hover {
+    color: #29ea38;
+    border-bottom: 5px solid #29ea38;
+    font-size: 23px;
+}
+
+.nav__link__mod {
+    display: none;
+}
+
+
+                            /* __________ B T N __________*/
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 25px;
+
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 800;
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .2s linear;
+}
+
+
+.btn--red {
+    background-color: #dd3029;
+    border: 5px solid #dd3029;
+    color: #fff;
+}
+
+
+.btn--red:hover {
+    background-color: #fff;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 800;
+    color: #000000;
+    font-size: 17px;
+}
+
+
+.btn--long {
+    background-color: #dd3029;
+    border: 5px solid #dd3029;
+
+    padding: 10px 25px;
+    border-radius: 10px;
+
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+}
+
+
+.btn--long:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+
+.btn--submit {
+    width: 200px;
+    text-align: center;
+    background-color: #dd3029;
+    border: 5px solid #dd3029;
+
+    border-radius: 2px;
+
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 60px;
+}
+
+
+.btn--submit:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+
+.btn--subscribe {
+    color: #fff;
+    background-color: transparent;
+    border: 2px dotted #fff;
+    border-radius: 2px;
+    width: 220px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+
+    transition: color .1s linear;
+}
+
+
+.btn--subscribe:hover {
+    border-color: #bf2f29;
+    color: #bf2f29;
+}
+
+
+                            /* __________ B A N N E R __________*/
+
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+
+
+    background: #31344e url("../img/banner/1.jpg") center no-repeat;
+    background-size: cover;
+
+    margin-bottom: 100px;
+
+}
+
+
+.banner1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.banner__title {
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.banner__subtitle {
+    font-family: 'Red Rose', cursive;
+    font-weight: 300;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+
+                            /* __________ A B O U T __________*/
+
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.about__text {
+    margin-bottom: 80px;
+}
+
+
+.about__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 60px;
+}
+
+
+.about__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 30px;
+    display: block;
+    position: relative;
+}
+
+
+.about__subtitle:after {
+    content: "";
+    height: 5px;
+    width: 100px;
+
+    background-color: #444444;
+
+    position: absolute;
+    right: 46%;
+    bottom: -20px;
+    z-index: 1;
+}
+
+
+.about__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about__item {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+
+
+.item__icon {
+    margin-bottom: 30px;
+}
+
+
+.item__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+
+.item__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+
+.about__title__mod {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+}
+
+
+.about__mod {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 30px;
+    display: block;
+    position: relative;
+    color: #fff;
+}
+
+
+.about__mod:after {
+    content: "";
+    height: 5px;
+    width: 100px;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 46%;
+    bottom: -20px;
+    z-index: 1;
+}
+
+
+                            /* __________ O U R   A P P R O C H __________*/
+
+
+.approch {
+    width: 100%;
+    background-color: #f3f3f3;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+
+.our {
+    text-align: center;
+}
+
+
+.our__content {
+
+}
+
+
+.our__item {
+    width: 100%;
+    height: 260px;
+    background-color: #fff;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+
+    display: flex;
+    overflow: hidden;
+
+    margin-bottom: 70px;
+}
+
+
+.our__item:last-child {
+    margin-bottom: 0;
+}
+
+
+.our__photo {
+    width: 380px;
+    height: 260px;
+    position: relative;
+
+    margin-right: 70px;
+}
+
+
+.our__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+
+.number {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #bf2f29;
+    border: 2px solid #fff;
+    border-radius: 10px;
+
+    z-index: 2;
+    bottom: 55px;
+    right: -70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.number__text {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+
+.number__title {
+    text-transform: uppercase;
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+
+.number__subtitle {
+    text-transform: lowercase;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 50px;
+}
+
+
+.our__text {
+    width: 750px;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.our__text__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.our__text__subtitle {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+.test {
+    overflow: hidden;
+    margin-left: 70px;
+    width: 380px;
+    height: 260px;
+    position: relative;
+}
+
+
+.our__photo2 {
+    width: 380px;
+    height: 260px;
+    position: relative;
+}
+
+
+.our__img2 {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+
+.number__mod {
+    right: 0;
+    left: -10px;
+}
+
+
+                            /* __________ W O R K __________*/
+
+
+.work__bac {
+    width: 100%;
+    background-color: #bf2f29;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.work {
+    width: 100%;
+
+}
+
+
+.work__text {
+    text-align: center;
+}
+
+
+.work__img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.works__item {
+    width: 25%;
+    height: 255px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.works__item:hover .works__content {
+    opacity: 1;
+}
+
+
+.works__photo {
+    min-width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+
+.works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(213, 94, 90, 1);
+    opacity: 0;
+
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    transition: opacity .2s linear;
+}
+
+
+.works__title {
+    color: #fff;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+
+.works__text {
+    color: #fff;
+    font-family: 'Red Rose', cursive;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+
+                            /* __________ C O N S U L T A T I O N __________*/
+
+
+.consultation {
+    width: 100%;
+    background-color: #4e86bc;
+    padding: 100px 0;
+}
+
+
+.consultation__content {
+    width: 100%;
+    text-align: center;
+}
+
+
+.consultation__form {
+    width: 800px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+
+.consultation__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+.fieldset {
+    border: none;
+    display: block;
+}
+
+
+.fieldset__mod {
+    display: block;
+    padding: 0 250px;
+    margin: 0;
+}
+
+
+.form {
+    border: 1px dashed #b2b2b2;
+    width: 550px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+
+    margin-bottom: 30px;
+}
+
+
+.form:hover {
+    color: #2700ff;
+}
+
+
+.form:focus {
+    color: #2700ff;
+}
+
+
+.form__mod {
+    width: 700px;
+    background-color: #525252;
+    color: #0045ff;
+    border-color: #c4bebe;
+    border-width: 2px;
+    margin-bottom: 50px;
+}
+
+
+.form__mod:hover {
+    color: #ffffff;
+}
+
+
+.form__mod:focus {
+    color: #27ff00;
+}
+
+
+                            /* __________ G E T __________*/
+
+
+.get {
+    width: 100%;
+    background-color: #2e2e2e;
+}
+
+
+.get__content {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+
+.get__title {
+    font-family: 'Red Rose', cursive;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+
+.get__text {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+                            /* __________ S O C I A L __________*/
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.social--footer {
+    justify-content: center;
+}
+
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+    background-color: transparent;
+    border: 1px solid #525252;
+
+    transition: background .1s linear;
+}
+
+
+.social__item:hover {
+    border: 3px dotted #bf2f29;
+}
+
+
+.social__item:hover .social__icon {
+    fill: #bf2f29;
+}
+
+
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+
+
+.social__icon {
+    display: block;
+    height: 18px;
+
+    fill: #c6cacc;
+
+    transition: fill .1s linear;
+}
+
+
+.social--footer .social__icon {
+    fill: #fff;
+}
+
+
+                            /* __________ F O O T E R __________*/
+
+
+.footer {
+    width: 100%;
+    background-color: #525252;
+    padding: 10px 0;
+    text-align: center;
+
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+.phone {
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+                            /* __________ B U R G E R __________*/
+
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.burger__item {
+    display: block;
+    width: 50px;
+    height: 10px;
+
+    background-color: #00ff4e;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    height: 100%;
+
+    background-color: #ff0000;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+
+.burger__item:before {
+    width: 60px;
+    top: -25px;
+}
+
+
+.burger__item:after {
+    width: 40px;
+    bottom: -25px;
+}
+
+
+                            /* __________ M E D I A__________*/
+
+
+                                        /*__________ @media (max-width: 1200px) __________*/
+
+
+@media (max-width: 1200px) {
+
+
+            /* __________ C O N T A I N E R __________*/
+
+
+    .container {
+        width: 100%;
+    }
+
+            /* __________ H E A D E R __________*/
+
+
+    .nav__link {
+        font-size: 18px;
+    }
+
+
+            /*__________ A P P R O C H __________*/
+
+
+    .approch {
+        padding: 120px 30px;
+    }
+
+
+            /*__________ W O R K __________*/
+
+
+    .work {
+        padding: 0 30px;
+    }
+
+
+            /*__________ A B O U T __________*/
+
+
+    .about__title__mod {
+        font-size: 50px;
+    }
+
+
+}
+
+
+                                        /*__________ @media (max-width: 1024px) __________*/
+
+
+@media (max-width: 1024px) {
+
+
+            /* __________ H E A D E R __________ */
+
+
+    .logo {
+        margin-right: 50px;
+    }
+
+
+            /*__________ A B O U T __________*/
+
+
+    .about__title__mod {
+        font-size: 45px;
+    }
+
+
+            /*__________ G E T __________*/
+
+
+    .fieldset__mod {
+        padding: 0 150px;
+    }
+
+
+}
+
+
+                                    /*__________ @media (max-width: 768px) __________*/
+
+
+@media (max-width: 768px) {
+
+
+            /*__________ H E A D E R __________*/
+
+
+    .btn--red {
+        display: none;
+    }
+
+
+    .logo {
+        margin-right: 420px;
+    }
+
+
+    .header__inner {
+        padding: 15px 5px;
+    }
+
+
+    .burger {
+        display: block;
+        margin-right: 30px;
+    }
+
+
+    .nav {
+       display: none;
+
+        width: 25%;
+        flex-direction: column;
+
+        background-color: #31344e;
+        text-align: right;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        background-color: #f3f3f3;
+        margin-right: 45px;
+
+        border-radius: 10px;
+        line-height: 1.2;
+    }
+
+
+    .nav.show {
+        display: flex;
+    }
+
+
+    .nav__link {
+        padding: 20px 15px;
+        border: none;
+    }
+
+
+    .nav__link__mod {
+        display: block;
+        color: #ff1111;
+    }
+
+
+            /*__________ A B O U T __________*/
+
+
+    .about__item {
+        width: 50%;
+    }
+
+
+    .about__title {
+        font-size: 50px;
+    }
+
+
+    .about__subtitle {
+        font-size: 40px;
+    }
+
+
+            /*__________ O U R __________*/
+
+
+    .our__text__title {
+        font-size: 20px;
+    }
+
+
+    .our__text__subtitle {
+        font-size: 13px;
+    }
+
+
+           /*__________ W O R K __________*/
+    .works__item {
+        width: 50%;
+    }
+
+
+            /*__________ C O N S U L T A T I O N __________*/
+
+
+    .about__title__mod  {
+        font-size: 32px;
+    }
+
+
+    .consultation__form {
+        width: 550px;
+    }
+
+
+    .form {
+        width: 460px;
+    }
+
+
+    .form1 {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+                                    /*__________ @media (max-width: 414px) __________*/
+
+
+@media (max-width: 414px) {
+
+
+            /*__________ H E A D E R __________*/
+
+
+    .logo {
+        margin-right: 130px;
+    }
+
+
+    .menu {
+        padding: 0 5px;
+    }
+
+
+    .logo__title {
+        font-size: 25px;
+    }
+
+
+    .logo__subtitle {
+        font-size: 18px;
+    }
+
+
+    .nav {
+        width: 50%;
+        margin-right: 30px;
+    }
+
+
+            /*__________ B A N N E R __________*/
+
+
+    .banner__title {
+        font-size: 44px;
+    }
+
+
+    .banner__subtitle {
+        font-size: 34px;
+    }
+
+
+    .btn--long {
+        font-size: 24px;
+    }
+
+
+            /*__________ A B O U T __________*/
+
+
+    .about__title {
+        font-size: 40px;
+    }
+
+
+    .about__subtitle {
+        font-size: 20px;
+    }
+
+
+    .about__subtitle:after {
+        right: 160px;
+    }
+
+
+    .about__item {
+        width: 100%;
+    }
+
+
+    .item__title  {
+        font-size: 22px;
+    }
+
+
+    .item__text {
+        font-size: 14px;
+    }
+
+
+            /*__________ O U R   A P P R O C H __________*/
+
+
+    .our .about__subtitle:after {
+        right: 140px;
+    }
+
+
+    .phon__item1 {
+        background: #31344e url("../img/ourapproch/1.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+
+    .phon__item2 {
+        background: #31344e url("../img/ourapproch/2.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    .phon__item3 {
+        background: #31344e url("../img/ourapproch/3.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+
+    .phon__item4 {
+        background: #31344e url("../img/ourapproch/4.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+
+    .our__photo {
+        display: none;
+    }
+
+
+    .our__photo2 {
+        display: none;
+    }
+
+
+    .test {
+        display: none;
+    }
+
+
+    .number {
+        display: none;
+    }
+
+
+            /*__________ W O R K __________*/
+
+
+    .work__text .about__subtitle:after {
+        right: 130px;
+    }
+
+
+    .works__item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    .works__item:last-child {
+        margin: 0;
+    }
+
+
+            /*__________ C O N S U L T A T I O N __________*/
+
+
+    .about__title__mod {
+        font-size: 25px;
+    }
+
+
+    .about__mod {
+        font-size: 24px;
+    }
+
+
+    .about__mod:after {
+        right: 160px;
+    }
+
+
+    .consultation__form {
+        width: 360px;
+    }
+
+
+    .form {
+        width: 300px;
+    }
+
+
+            /*__________ G E T __________*/
+
+
+    .get__content {
+        padding: 100px 10px;
+    }
+
+
+    .get__title {
+        font-size: 40px;
+    }
+
+
+    .social__item {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .get__text {
+        font-size: 22px;
+    }
+
+
+    .fieldset__mod {
+        padding: 0;
+    }
+
+
+}
+
+
+                                    /*__________ @media (max-width: 375px) __________*/
+
+
+@media (max-width: 375px)  {
+
+
+            /* __________ H E A D E R __________ */
+
+
+    .logo {
+        margin-right: 80px;
+    }
+
+
+
+             /*__________ B A N N E R __________*/
+
+
+    .banner__content {
+        padding: 0 10px;
+    }
+
+
+    .banner__subtitle {
+        font-size: 30px;
+    }
+
+
+             /*__________ A B O U T __________*/
+
+
+    .about__subtitle:after {
+        right: 140px;
+    }
+
+
+            /*__________ O U R   A P P R O C H __________*/
+
+
+    .our .about__subtitle:after {
+        right: 110px;
+    }
+
+
+    .our__text {
+        padding: 20px 20px;
+    }
+
+
+    .work {
+        padding: 0 25px;
+    }
+
+
+    .about__mod {
+        font-size: 22px;
+    }
+
+
+    .work__text .about__subtitle:after {
+        right: 110px;
+    }
+
+
+            /*__________ C O N S U L T A T I O N __________*/
+
+
+    .consultation {
+        padding: 50px 0;
+    }
+
+
+    .about__mod:after {
+        right: 140px;
+    }
+
+
+    .consultation__text {
+        font-size: 14px;
+    }
+
+
+    .consultation__form {
+        width: 320px;
+    }
+
+
+    .consultation__form {
+        padding-top: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 45px;
+    }
+
+
+    .form {
+        width: 250px;
+    }
+
+
+           /*__________ G E T __________*/
+
+
+    .social__item {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .get__text {
+        font-size: 20px;
+    }
+
+
+}
+
+
+                                    /*__________ @media (max-width: 320px) __________*/
+
+
+@media (max-width: 320px) {
+
+
+           /* __________ H E A D E R __________ */
+
+
+    .logo {
+        margin-right: 40px;
+    }
+
+
+
+            /*__________ B A N N E R __________*/
+
+
+    .banner__title {
+        font-size: 40px;
+    }
+
+
+    .banner__subtitle {
+        font-size: 26px;
+    }
+
+
+            /*__________ A B O U T __________*/
+
+
+    .about__subtitle:after {
+        right: 110px;
+    }
+
+
+    .about__title {
+        font-size: 34px;
+    }
+
+
+    .about__subtitle {
+        font-size: 20px;
+    }
+
+
+    .our .about__subtitle:after {
+        right: 110px;
+    }
+
+
+    .approch .about__title {
+        font-size: 34px;
+    }
+
+
+    .approch .about__subtitle {
+        font-size: 16px;
+    }
+
+
+    .our .about__subtitle:after {
+        right: 82px;
+    }
+
+
+            /*__________ W O R K __________*/
+
+
+    .about__title__mod {
+        font-size: 34px;
+    }
+
+
+    .work__text .about__subtitle:after {
+        right: 85px;
+    }
+
+
+            /*__________ C O N S U L T A T I O N __________*/
+
+
+    .consultation .about__title__mod {
+        font-size: 24px;
+    }
+
+
+    .about__mod:after {
+        right: 110px;
+    }
+
+
+    .consultation__form {
+        width: 280px;
+    }
+
+
+    .consultation__text {
+        font-size: 12px;
+    }
+
+    .form {
+        width: 210px;
+        font-size: 16px;
+    }
+
+
+}
+
